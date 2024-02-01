@@ -1,0 +1,48 @@
+nav {
+    padding: 10px;
+    border-radius:20px;
+}
+
+.navbar-toggler {
+    background-color: rgb(234, 234, 234);
+}
+img {
+    max-height: 80px;
+    border-radius: 15%;
+    margin-left: 20px;
+}
+li{
+    color: black;
+    margin-right: 10px;
+}
+#liReserva{
+    background-color: #556c2f;
+    border-radius: 10%;
+    color: white;
+    
+}
+li:hover {
+    background-color: #556c2f;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+#btnReserva {
+    border: 2px solid #556c2f;
+}
+
+#btnReserva:hover {
+    background-color: #556c2f;
+    color: white;
+}
+button{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregamos transiciones para suavizar el efecto */
+}
+
+button:hover {
+    transform: translateY(-3px); /* Movemos el botón hacia arriba */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+}
