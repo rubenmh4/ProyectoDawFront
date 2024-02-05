@@ -28,21 +28,14 @@ li:hover {
     cursor: pointer;
 }
 
-
-
-#btnReserva {
-    border: 2px solid #556c2f;
-}
-
-#btnReserva:hover {
-    background-color: #556c2f;
-    color: white;
-}
 button{
+    border: 2px solid #556c2f;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregamos transiciones para suavizar el efecto */
 }
 
 button:hover {
     transform: translateY(-3px); /* Movemos el botón hacia arriba */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+    background-color: #556c2f;
+    color: white;
 }

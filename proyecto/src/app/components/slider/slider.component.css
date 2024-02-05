@@ -4,23 +4,35 @@
     opacity: 40%;
 }
 .imagenprincipal {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 20px;
     height: 500px;
-    background: url('../../../assets/img/fondoSectionPalas.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(85, 108, 47, 0.7), rgba(85, 108, 47, 0.7)), url('../../../assets/img/fondoSectionPalas.png') no-repeat center center/cover;
     padding: 50px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+}
+.container {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-height: fit-content;
+}
+.btosSlider {
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: white;
+    color: #556c2f;
+    border: 2px solid #556c2f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregamos transiciones para suavizar el efecto */
+}
+button:hover{
+    transform: translateY(-3px); /* Movemos el botón hacia arriba */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
+    background-color: #556c2f;
+    color: white;
 }
 
-.imagenprincipal::before > .verde {
-    content: ""; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(85, 108, 47, 0.4);
-    border-radius: 20px;
-     /* Colocamos la capa detrás del contenido */
-}
