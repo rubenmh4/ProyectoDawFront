@@ -1,23 +1,33 @@
-
-.color {
-    background-color:  #556c2f;
-    opacity: 40%;
+#containerPrincipal{
+    display: flex;
+    justify-content: center;
 }
+
 .imagenprincipal {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 20px;
-    height: 500px;
     background: linear-gradient(rgba(85, 108, 47, 0.7), rgba(85, 108, 47, 0.7)), url('../../../assets/img/fondoSectionPalas.png') no-repeat center center/cover;
     padding: 50px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 1450px;
+    height: 500px;
+}
+#fondo {
+    margin-right: 50px;
 }
 .container {
-   
     display: flex;
     flex-direction: column;
-    align-items: end;
-    max-height: fit-content;
+    text-align: center;
+    background-color: rgba(85, 108, 47, 0.5);
+    border-radius: 20%;
+    padding: 30px;
+    color: white;
+    max-height: 500px;
 }
 .btosSlider {
     display: flex;
@@ -35,4 +45,3 @@ button:hover{
     background-color: #556c2f;
     color: white;
 }
-
