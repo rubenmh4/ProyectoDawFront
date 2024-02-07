@@ -6,10 +6,10 @@
 .imagenprincipal {
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 20px;
     border-radius: 20px;
     background: linear-gradient(rgba(85, 108, 47, 0.7), rgba(85, 108, 47, 0.7)), url('../../../assets/img/fondoSectionPalas.png') no-repeat center center/cover;
     padding: 50px;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: end;
