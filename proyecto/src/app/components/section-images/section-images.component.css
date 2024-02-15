@@ -1,0 +1,24 @@
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.img-fluid{
+    margin: 15px;
+}
+img{
+    max-width: 450px;
+    border-radius: 10px ;
+}
+
+@media (max-width:768px) {
+    .fila {
+        flex-direction: column;
+    }
+}
