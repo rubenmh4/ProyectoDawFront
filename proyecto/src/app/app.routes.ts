@@ -11,7 +11,7 @@ export const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'inicioSesion',
+        path: 'contacto',
         component: FormPagesComponent
     },
     {
