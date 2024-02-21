@@ -8,7 +8,7 @@
     margin-right: 50px;
     margin-bottom: 20px;
     border-radius: 20px;
-    background: linear-gradient(rgba(85, 108, 47, 0.7), rgba(85, 108, 47, 0.7)), url('../../../assets/img/fondoSectionPalas.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(98, 152, 105, 0.7), rgba(62, 106, 76, 0.70)), url('../../../assets/img/fondoSectionPalas.png') no-repeat center center/cover;
     padding: 50px;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(85, 108, 47, 0.5);
+    background: linear-gradient(rgba(98, 152, 105, 0.7), rgba(62, 106, 76, 0.70));
     border-radius: 20%;
     padding: 30px;
     color: white;
@@ -36,12 +36,12 @@
 button{
     background-color: white;
     color: #556c2f;
-    border: 2px solid #556c2f;
+    border: 2px solid rgba(62, 106, 76);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregamos transiciones para suavizar el efecto */
 }
 button:hover{
     transform: translateY(-3px); /* Movemos el botón hacia arriba */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregamos una sombra */
-    background-color: #556c2f;
+    background: linear-gradient(rgba(98, 152, 105, 0.7), rgba(62, 106, 76, 0.70));
     color: white;
 }

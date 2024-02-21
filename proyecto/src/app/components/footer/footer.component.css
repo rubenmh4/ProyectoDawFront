@@ -1,5 +1,9 @@
 footer {
-background-color: rgba(85, 108, 47, 0.7);
+/*background-color: rgba(85, 108, 47, 0.7);*/
+background:
+    linear-gradient(
+    rgba(98, 152, 105, 0.75),
+    rgba(62, 106, 76, 0.95));
 color: white;
 border-top-left-radius:8px;
 border-top-right-radius:8px;

@@ -1,3 +1,4 @@
+import { SignInUpPagesComponent } from './pages/sign-in-up-pages/sign-in-up-pages.component';
 import { Routes } from '@angular/router';
 import { IndexPagesComponent } from './pages/index-pages/index-pages.component';
 import { FormPagesComponent } from './pages/form-pages/form-pages.component';
@@ -21,5 +22,9 @@ export const routes: Routes = [
     {
         path:'instalaciones',
         component:InstalacionesPagesComponent
+    },
+    {
+        path:'form',
+        component:SignInUpPagesComponent
     }
 ];
