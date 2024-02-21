@@ -1,1 +1,9 @@
-<p>instalaciones-pages works!</p>
+<app-header></app-header>
+<input type="file" (change)="uploadImage($event)">
+<div class="images">
+    @for (image of images; track image) {
+        <img [src]="image" >
+      } @empty {
+        Empty list of users
+      }
+</div>

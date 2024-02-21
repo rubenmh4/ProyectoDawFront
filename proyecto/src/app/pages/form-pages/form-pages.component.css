@@ -1,13 +1,17 @@
-
+#fondo {
+  padding: 40px;
+}
 .container {
+  box-shadow: 0 1rem 3rem rgba(4, 254, 83, 0.1) !important;
+
   margin-top:40px;
   margin-bottom:70px;
 }
 .gradient-brand-color {
-  background-image: -webkit-linear-gradient(0deg, rgba(104, 122, 74, 0.883) 0%, rgba(185, 195, 169, 0.883) 100%);
+  background-image: -webkit-linear-gradient(0deg,rgba(98, 152, 105, 0.75 ) 0%,
+  rgba(62, 106, 76, 0.95)100%);
   color: #fff;
 }
-
 .contact-info__wrapper {
   overflow: hidden;
   border-radius: .625rem .625rem 0 0
