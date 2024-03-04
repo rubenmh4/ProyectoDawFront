@@ -1,0 +1,39 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(238, 241, 241);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px;    
+}
+#titular{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+#titular h4{
+    margin-top: 20px;
+}
+
+
+#icon {
+    max-width: 70px;
+}
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+img{
+    max-width: 500px;
+    margin: 10px;
+    border-radius: 10px;
+}
