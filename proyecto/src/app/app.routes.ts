@@ -5,6 +5,7 @@ import { FormPagesComponent } from './pages/form-pages/form-pages.component';
 import { PistasIndoorPagesComponent } from './pages/pistas-indoor-pages/pistas-indoor-pages.component';
 import { InstalacionesPagesComponent } from './pages/instalaciones-pages/instalaciones-pages.component';
 import { SectionUsuariosComponent } from './components/section-usuarios/section-usuarios.component';
+import { PageUsuarioComponent } from './components/page-usuario/page-usuario.component';
 
 export const routes: Routes = [
     {
@@ -31,5 +32,9 @@ export const routes: Routes = [
     {
         path:'usuarios',
         component:SectionUsuariosComponent
+    },
+    {
+        path:'usuario',
+        component:PageUsuarioComponent
     }
 ];
