@@ -1,0 +1,12 @@
+<div class="images">
+    @for (usuario of usuarios; track usuario) {
+        <div style="background-color: cadetblue;">
+            <p>{{ usuario.usuario}}</p>
+            <p>{{usuario.nombre}}</p>
+            <p>{{usuario.apellidos}}</p>
+        </div>
+      } @empty {
+        Empty list of users
+      }
+</div>
+
