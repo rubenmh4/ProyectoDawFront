@@ -39,14 +39,33 @@ img {
 #infoPersonal{
     display: flex;
     flex-direction:column;
+    width: 40%;
+
 }
 #infoEstadisticas {
     display: flex;
     flex-direction:column;
     justify-content: space-between;
+    width: 40%;
+    
 }
 .estadisticas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 10px;
+}
+.estadisticas h6 {
+    font-size: 30px;
+}
+.estadisticas span {
+    font-size: 25px;
+}
+#titulo {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
 }

@@ -21,7 +21,6 @@ export class SectionUsuariosComponent implements OnInit{
     ngOnInit(): void {
       this.usuarioService.buscarUsuarios().subscribe((res)=> {
         this.usuarios = res;
-        console.log(res)
       })
   }
   
