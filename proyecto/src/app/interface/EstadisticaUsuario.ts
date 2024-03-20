@@ -7,26 +7,24 @@
 // These functions will throw an error if the JSON doesn't
 // match the expected interface, even if the JSON is valid.
 
-export interface Usuario {
-    nombre:          string;
-    apellidos:       string;
-    email:           string;
-    contrasena:      string;
-    usuario:         string;
-    image:           string;
-    fechaNacimiento: number;
-    lugarNacimiento: string;
-    id:              string;
+export interface EstadisticaUsuario {
+    idUsuario:        number;
+    posicion:         string;
+    liga:             number;
+    reservas:         number;
+    partidosGanados:  number;
+    partidosPerdidos: number;
+    id:               string;
 }
 
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
 export class Convert {
-    public static toWelcome(json: string): Usuario[] {
+    public static toWelcome(json: string): EstadisticaUsuario {
         return cast(JSON.parse(json), a(r("Welcome")));
     }
 
-    public static welcomeToJson(value: Usuario[]): string {
+    public static welcomeToJson(value: EstadisticaUsuario): string {
         return JSON.stringify(uncast(value, a(r("Welcome"))), null, 2);
     }
 }
@@ -185,14 +183,12 @@ function r(name: string) {
 
 const typeMap: any = {
     "Welcome": o([
-        { json: "nombre", js: "nombre", typ: "" },
-        { json: "apellidos", js: "apellidos", typ: "" },
-        { json: "email", js: "email", typ: "" },
-        { json: "contrasena", js: "contrasena", typ: "" },
-        { json: "usuario", js: "usuario", typ: "" },
-        { json: "image", js: "image", typ: "" },
-        { json: "fechaNacimiento", js: "fechaNacimiento", typ: 0 },
-        { json: "lugarNacimiento", js: "lugarNacimiento", typ: "" },
+        { json: "idUsuario", js: "idUsuario", typ: 0 },
+        { json: "posicion", js: "posicion", typ: "" },
+        { json: "liga", js: "liga", typ: 0 },
+        { json: "reservas", js: "reservas", typ: 0 },
+        { json: "partidosGanados", js: "partidosGanados", typ: 0 },
+        { json: "partidosPerdidos", js: "partidosPerdidos", typ: 0 },
         { json: "id", js: "id", typ: "" },
     ], false),
 };

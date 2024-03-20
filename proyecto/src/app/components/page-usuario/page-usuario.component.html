@@ -1,12 +1,16 @@
+<app-header></app-header>
 <div id="principal">
     <div id="header">
         <div id="sectionIzq">
             <img src="../../../assets/img/LogoRuben.png" alt="">    
             <h3>Username</h3>
         </div>
-        <div>
-            <button class="btn">Editar perfil</button>
-        </div>
+        @if (posibilidadEditar) {
+            <div>
+                <button class="btn">Editar perfil</button>
+            </div>
+        }
+        
     </div>
     <div id="info">
         <div id="infoPersonal">
@@ -59,3 +63,4 @@
         </div>
     </div>
 </div>
+<app-footer></app-footer>

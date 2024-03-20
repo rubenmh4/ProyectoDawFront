@@ -5,6 +5,8 @@ article{
     color:#fff;
     font-size:.8rem;
     justify-content: space-between;
+    background-color: #09f;
+    max-width: 250px;
   }
   article header {
     display: flex;
