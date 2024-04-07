@@ -28,9 +28,10 @@ img {
     margin-right: 30px;
 }
 .btn{
-    align-items: end;
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
+    color: black;
 }
+
 
 #info {
     display: flex;

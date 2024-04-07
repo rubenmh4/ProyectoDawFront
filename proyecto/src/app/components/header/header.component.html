@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-    <img src="../../../assets/img/LogoRuben.png" class="img-fluid" alt="">
+    <img src="assets/img/LogoNuevo.png" class="img-fluid" alt="">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,18 @@
                 <a class="nav-link">Reservar pista</a>
             </li>
         </ul>
-        <a routerLink="/form"><button class="btn my-2 my-sm-0 m-5" id="btnReserva"><span class="material-symbols-outlined">person</span></button></a>
+        <div id="right">
+            @if (isLogged) {
+            <a routerLink="/form"><button class="btn my-2 my-sm-0 m-5" id="btnReserva"><span
+                        class="material-symbols-outlined">person</span></button></a>
+            }
+            @else {
+                <div routerLink="/usuario">
+                    <img src="assets/img/twitter.png" alt="Imagen del usuario" class="img-fluid" id="imageUser" for="img">
+                    <strong><a routerLink="/usuario" id="img">{{ username }}</a></strong>
+                </div>
+            }
+        </div>
 
     </div>
 </nav>

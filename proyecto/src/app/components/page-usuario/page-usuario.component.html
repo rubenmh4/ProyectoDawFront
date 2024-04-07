@@ -2,15 +2,17 @@
 <div id="principal">
     <div id="header">
         <div id="sectionIzq">
-            <img src="../../../assets/img/LogoRuben.png" alt="">    
+            <img src="assets/img/LogoRuben.png" alt="">    
             <h3>Username</h3>
         </div>
+        <div>
         @if (posibilidadEditar) {
-            <div>
-                <button class="btn">Editar perfil</button>
-            </div>
-        }
-        
+            <a routerLink="/editarPerfil"><button class="btn">Editar perfil</button></a>
+         }
+         @else {
+            <a routerLink="/directMessage"><button class="btn">Enviar mensaje</button></a>
+         }   
+        </div>
     </div>
     <div id="info">
         <div id="infoPersonal">
@@ -19,19 +21,19 @@
             </div>
             <div class="estadisticas">
                 <span>Nombre Completo</span>
-                <h6>Martin Di Nenno</h6>
+                <h6>{{ usuario.nombre  }} {{ usuario.apellidos }}</h6>
             </div>
             <div class="estadisticas">
                 <span>Lugar de nacimiento</span>
-                <h6>Chaco -Arg</h6>
+                <h6>{{ usuario.lugarNac}}</h6>
             </div>
             <div class="estadisticas">
                 <span>Fecha de nacimiento</span>
-                <h6>25-03-1996</h6>
+                <h6>{{ usuario.fechaNac}}</h6>
             </div>
             <div class="estadisticas">
                 <span>Email</span>
-                <h6>carlosElRAYO&commat;gmail.com</h6>
+                <h6>{{ usuario.email}}</h6>
             </div>
            
         </div>
